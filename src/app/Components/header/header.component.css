@@ -1,0 +1,45 @@
+/* 
+
+.container-fluid {
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color:  #FFE4E1; set the background color */
+    /* background-color: black;
+     padding: 1rem;
+  
+  }
+  .navbar {
+   padding:0;
+  }
+  
+   .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold; */
+    /* color: #8B6969; */
+    /* color:white;
+    text-decoration: none;
+  } 
+  .nav-link:hover {
+    /* color:#8B6969 ; */
+    /* background-color: rgb(152, 82, 82);
+    font-weight: bold;
+  } */
+  /* .btn-primary {
+    background-color: #8B6969; */
+    /* background-color: rgb(190, 27, 27); */
+  /* }
+ .nav-item{
+    font-weight: bold;
+ }  */
+ .space-buttons{
+  flex:1 1 auto;
+ }
+ .mat-toolbar {
+  color: white;
+}
+
+.mat-toolbar a {
+  color: white;
+}

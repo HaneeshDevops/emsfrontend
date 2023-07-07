@@ -1,0 +1,59 @@
+<h2>Employee List</h2>
+<a routerLink="/create-booking" class="btn btn-info">Add Booking</a>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>date</th>
+      <th>totalHour</th>
+      <th>totalCost</th>
+      <th>noOfGuest</th>
+      <th>eventId</th>
+      <th>venueId</th>
+      <th>foodId</th>
+      <th>userName</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let booking of bookings">
+      <td>{{ booking.date }}</td>
+      <td>{{ booking.totalHour }}</td>
+      <td>{{ booking.totalCost }}</td>
+      <td>{{ booking.noOfGuest }}</td>
+      <td>{{ booking.eventId }}</td>
+      <td>{{ booking.venueId }}</td>
+      <td>{{ booking.foodId }}</td>
+      <td>{{ booking.userName }}</td>
+      <td>
+        <button
+          (click)="updateBooking(booking.bookingId!)"
+          class="btn btn-info"
+        >
+          Update
+        </button>
+        <!-- <button
+          (click)="
+            booking.bookingId !== undefined && updateBooking(booking.bookingId)
+          "
+          class="btn btn-info"
+        >
+          Update
+        </button> -->
+        <button
+          (click)="deleteBooking(booking.bookingId)"
+          class="btn btn-danger"
+          style="margin-left: 10px"
+        >
+          Delete
+        </button>
+        <!--<button
+          (click)="bookingDetails(booking.bookingId)"
+          class="btn btn-info"
+          style="margin-left: 10px"
+        >
+          View
+        </button> -->
+      </td>
+    </tr>
+  </tbody>
+</table>

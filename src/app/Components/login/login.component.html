@@ -1,0 +1,45 @@
+<div class="bootstrap-wrapper" style="margin-top:80px ;">
+  <div class="container">
+
+    <div class="row" style="margin-top:20px;">
+      <div class="col-md-6 offset-md-3">
+        <div class="container text-center">
+          <!-- <img src="../../../assets/register.png" alt="" width="100px" height="120px"> -->
+        </div>
+        <h1 class="text-center">Login Here!! </h1>
+
+        <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+
+          <mat-form-field class="full-width " appearance="outline" style="font-size: small;">
+            <mat-label>UserName</mat-label>
+            <input required
+            type="text"  ngModel name="userName" id="userName" name="userName" matInput
+              placeholder="Enter your Username">
+          </mat-form-field>
+
+          <br>
+
+
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Enter your password</mat-label>
+            <input required
+            matInput [type]="hide ? 'password' : 'text'" ngModel name="userPassword" id="userPassword"
+              name="userPassword">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+          <div class="container text-center">
+            <button style="font: size 48px;" mat-raised-button color="primary">Login</button>
+          </div>
+          <br>
+          <div class="container text-center">
+            <a href="/signup" style="color:brown">Didn't Register? Click to Register </a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+  </div>

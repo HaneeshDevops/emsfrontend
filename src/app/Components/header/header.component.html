@@ -1,0 +1,191 @@
+<mat-toolbar style="background-color: black">
+  <a mat-button routerLink="" routerLinkActive="active">
+    <span> EVENT MANAGEMENT SYSTEM </span>
+  </a>
+  <span class="space-buttons"></span>
+  <a mat-button routerLink="" routerLinkActive="active" *ngIf="!isLoggedIn()">
+    <span>Home</span>
+  </a>
+  <a
+    mat-button
+    routerLink="/aboutus"
+    routerLinkActive="active"
+    *ngIf="!isLoggedIn()"
+  >
+    <span>About Us</span>
+  </a>
+  <a
+    mat-button
+    routerLink="/contactus"
+    routerLinkActive="active"
+    *ngIf="!isLoggedIn()"
+  >
+    <span>Contact Us</span>
+  </a>
+  <a
+    mat-button
+    routerLink="/admin"
+    routerLinkActive="active"
+    *ngIf="userService.roleMatch(['Admin'])"
+  >
+    <span>Admin Dashboard</span>
+  </a>
+  <a
+    mat-button
+    routerLink="/user"
+    routerLinkActive="active"
+    *ngIf="userService.roleMatch(['User'])"
+  >
+    <span>Profile</span>
+  </a>
+
+  <div fxShow="true" fxHide.lt-sm>
+    <button
+      mat-raised-button
+      color="accent"
+      *ngIf="!isLoggedIn()"
+      routerLink="/login"
+    >
+      Login
+    </button>
+    <button mat-raised-button *ngIf="isLoggedIn()" (click)="logout()">
+      Logout
+    </button>
+  </div>
+</mat-toolbar>
+
+<!-- 
+  <button
+    mat-raised-button
+    color="primary"
+    routerLink="/addNewProfile"
+    *ngIf="isAdmin()"
+  >
+    Add New Profile
+  </button> -->
+
+<!-- <button
+    mat-raised-button
+    color="primary"
+    routerLink="/addNewProfile"
+    *ngIf="isUser()"
+  >
+    Add User Profile
+  </button> -->
+
+<!-- <button
+    mat-raised-button
+    color="primary"
+    routerLink="/showProfileDetails"
+    *ngIf="isAdmin()"
+  >
+    View Profiles
+  </button> -->
+
+<!-- <button
+    mat-raised-button
+    color="primary"
+    routerLink="/showProfileDetails"
+    *ngIf="isUser()"
+  >
+    View Profiles
+  </button> -->
+<!-- </mat-toolbar> -->
+
+<!-- <button
+    *ngIf="isLoggedIn()"
+    mat-raised-button
+    routerLink="/login"
+    color="rgb(152, 82, 82)"
+  >
+    Login
+  </button>
+</mat-toolbar> -->
+
+<!-- <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="">EVENT MANAGEMENT SYSTEM</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            *ngIf="!isLoggedIn()"
+            aria-current="page"
+            routerLink=""
+            style="color: rgb(247, 223, 223)"
+            >Home</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            *ngIf="!isLoggedIn()"
+            aria-current="page"
+            routerLink="/aboutus"
+            style="color: rgb(247, 223, 223)"
+            >About Us</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            *ngIf="!isLoggedIn()"
+            aria-current="page"
+            routerLink="/contactus"
+            style="color: rgb(247, 223, 223)"
+            >Contact Us</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            routerLink="/admin"
+            *ngIf="userService.roleMatch(['Admin'])"
+            >Admin Dashboard</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            routerLink="/user"
+            style="color: rgb(247, 223, 223)"
+            *ngIf="userService.roleMatch(['User'])"
+            >Profile</a
+          >
+        </li>
+      </ul>
+      <button
+        *ngIf="!isLoggedIn()"
+        type="button"
+        class="btn btn-primary"
+        routerLink="/login"
+      >
+        Login
+      </button>
+      &nbsp; &nbsp;
+      <button
+        *ngIf="isLoggedIn()"
+        type="button"
+        class="btn btn-danger"
+        (click)="logout()"
+      >
+        Logout
+      </button>
+    </div>
+  </div>
+</nav> -->

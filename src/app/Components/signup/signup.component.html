@@ -1,0 +1,65 @@
+<div class="bootstrap-wrapper" style="margin-top:80px ;">
+     <div class="container" >
+
+        <div class="row" style="margin-top:20px;">
+            <div class="col-md-6 offset-md-3">
+              <div class="container text-center">
+                <!-- <img src="../../../assets/register.png" alt="" width="100px" height="120px"> -->
+              </div>
+                <h1 class="text-center">Register Here!!</h1>
+                
+         <form (ngSubmit)="formSubmit()">
+
+              <mat-form-field class="full-width" appearance="outline"
+              style="font-size: small;">
+                <mat-label>UserName</mat-label>
+                <input required type="text"  [(ngModel)]="user.userName"name="userName" id="userName"
+                matInput placeholder="Enter your Username">
+                <!-- <mat-hint>Valid Username</mat-hint> -->
+              </mat-form-field>
+
+              <mat-form-field class="full-width" appearance="outline">
+                <mat-label>UserFirstName</mat-label>
+                <input required
+                type="text" [(ngModel)]="user.userFirstName" name = "userFirstName" id="userFirstName"
+                matInput placeholder="Enter your firstname">
+                <!-- <mat-hint>Valid Username</mat-hint> -->
+              </mat-form-field>
+
+              <mat-form-field class="full-width" appearance="outline">
+                <mat-label>UserLastName</mat-label>
+                <input required
+                type="text"  [(ngModel)]="user.userLastName" name="userLastName" id="userLastName"
+                 matInput placeholder="Enter your lastname">
+                <!-- <mat-hint>Valid Username</mat-hint> -->
+              </mat-form-field>
+ 
+              <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Mobile Number</mat-label>
+                <input required
+                type="number"  [(ngModel)]="user.mobileNumber" name="mobileNumber" id="mobileNumber" 
+                matInput placeholder="Enter your mobile number">
+                <!-- <mat-hint>Valid Username</mat-hint> -->
+            </mat-form-field>
+                <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Enter your password</mat-label>
+                    <input required
+                    matInput [type]="hide ? 'password' : 'text'"  
+                    [(ngModel)]="user.userPassword" name="userPassword" id="userPassword">
+                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                </mat-form-field>
+          <div class="container text-center">
+            <button style="font: size 48px;" mat-raised-button color="primary">Register</button>
+          </div>
+          <br>
+           <div class="container text-center">
+            <a href="/login" style="color:brown">Already Registered? Click to login </a>
+           </div>
+         </form>
+        </div>
+     </div>
+
+
+</div>

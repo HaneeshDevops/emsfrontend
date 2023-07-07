@@ -1,0 +1,43 @@
+<div class="col-md-6 offset-md-3">
+  <h3>Create Event</h3>
+  <form (ngSubmit)="onSubmit()">
+    <!-- <div class="form-group">
+      <label> Event Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        [(ngModel)]="event.name"
+        name="name"
+      />
+    </div> -->
+    <div class="form-group">
+      <select [(ngModel)]="event.name" name="name">
+        <option value="marriage">marriage</option>
+        <option value="engagement">engagement</option>
+        <option value="youtube creator summit">youtube creator summit</option>
+        <option value="birthday party">birthday party</option>
+        <option value="concert">concert</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label> Event Description</label>
+      <input
+        type="text"
+        class="form-control"
+        id="eventDesc"
+        [(ngModel)]="event.eventDesc"
+        name="eventDesc"
+      />
+    </div>
+    <br />
+    <br />
+    <button
+      class="btn btn-success btn-submit"
+      type="submit"
+      routerLink="/create-venue"
+    >
+      Submit
+    </button>
+  </form>
+</div>

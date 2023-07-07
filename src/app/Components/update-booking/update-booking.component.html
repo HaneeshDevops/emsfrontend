@@ -1,0 +1,89 @@
+<div class="col-md-6 offset-md-3">
+  <h3>Update Booking</h3>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label> date</label>
+      <input
+        type="text"
+        class="form-control"
+        id="date"
+        [(ngModel)]="booking.date"
+        name="date"
+      />
+    </div>
+
+    <div class="form-group">
+      <label> totalHour</label>
+      <input
+        type="text"
+        class="form-control"
+        id="totalHour"
+        [(ngModel)]="booking.totalHour"
+        name="totalHour"
+      />
+    </div>
+
+    <div class="form-group">
+      <label> totalCost</label>
+      <input
+        type="text"
+        class="form-control"
+        id="totalCost"
+        [(ngModel)]="booking.totalCost"
+        name="totalCost"
+      />
+    </div>
+    <div class="form-group">
+      <label> noOfGuest</label>
+      <input
+        type="text"
+        class="form-control"
+        id="noOfGuest"
+        [(ngModel)]="booking.noOfGuest"
+        name="noOfGuest"
+      />
+    </div>
+    <div class="form-group">
+      <label> eventId</label>
+      <input
+        type="text"
+        class="form-control"
+        id="eventId"
+        [(ngModel)]="booking.eventId"
+        name="eventId"
+      />
+    </div>
+    <div class="form-group">
+      <label> venueId</label>
+      <input
+        type="text"
+        class="form-control"
+        id="venueId"
+        [(ngModel)]="booking.venueId"
+        name="venueId"
+      />
+    </div>
+    <div class="form-group">
+      <label> foodId</label>
+      <input
+        type="text"
+        class="form-control"
+        id="foodId"
+        [(ngModel)]="booking.foodId"
+        name="foodId"
+      />
+    </div>
+    <div class="form-group">
+      <label> userName</label>
+      <input
+        type="text"
+        class="form-control"
+        id="userName"
+        [(ngModel)]="booking.userName"
+        name="userName"
+      />
+    </div>
+
+    <button class="btn btn-success" type="submit">Submit</button>
+  </form>
+</div>

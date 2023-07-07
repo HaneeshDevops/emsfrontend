@@ -1,0 +1,36 @@
+<div class="col-md-6 offset-md-3">
+  <h3>Create Fooditem</h3>
+  <form (ngSubmit)="onSubmit()">
+    <!-- <div class="form-group">
+            <label>Venue Id</label>
+            <input type="text" class ="form-control" id = "venueId"
+               [(ngModel)] = "venue.venueId" name = "venueId">
+        </div> -->
+
+    <div class="form-group">
+      <label>Food Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="foodName"
+        [(ngModel)]="fooditem.foodName"
+        name="foodName"
+      />
+    </div>
+
+    <div class="form-group">
+      <label>Item Cost</label>
+      <input
+        type="text"
+        class="form-control"
+        id="itemCost"
+        [(ngModel)]="fooditem.itemCost"
+        name="itemCost"
+      />
+    </div>
+
+    <button class="btn btn-success" type="submit" routerLink="/create-booking">
+      Submit
+    </button>
+  </form>
+</div>

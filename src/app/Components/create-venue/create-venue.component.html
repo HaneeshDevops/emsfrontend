@@ -1,0 +1,62 @@
+<div class="col-md-6 offset-md-3">
+  <h3>Create Venue</h3>
+  <form (ngSubmit)="onSubmit()">
+    <!-- <div class="form-group">
+            <label>Venue Id</label>
+            <input type="text" class ="form-control" id = "venueId"
+               [(ngModel)] = "venue.venueId" name = "venueId">
+        </div> -->
+
+    <div class="form-group">
+      <label>Venue Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="venueName"
+        [(ngModel)]="venue.venueName"
+        name="venueName"
+      />
+    </div>
+
+    <div class="form-group">
+      <label>Venue Cost</label>
+      <input
+        type="text"
+        class="form-control"
+        id="venueCost"
+        [(ngModel)]="venue.venueCost"
+        name="venueCost"
+      />
+    </div>
+
+    <div class="form-group">
+      <label>Location</label>
+      <input
+        type="text"
+        class="form-control"
+        id="location"
+        [(ngModel)]="venue.location"
+        name="location"
+      />
+    </div>
+
+    <div class="form-group">
+      <label>Venue Contact</label>
+      <input
+        type="text"
+        class="form-control"
+        id="venueContact"
+        [(ngModel)]="venue.venueContact"
+        name="venueContact"
+      />
+    </div>
+
+    <button
+      class="btn btn-success"
+      type="submit"
+      routerLink="/create-fooditems"
+    >
+      Submit
+    </button>
+  </form>
+</div>

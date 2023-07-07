@@ -1,0 +1,60 @@
+.container{
+
+    width: 1150px;
+
+    max-width: 100%;
+
+    margin: auto;
+
+    height: auto;
+
+    padding-top: 20px;
+
+    padding-bottom: 20px;
+
+}
+.btn {
+    background-color: #325e4d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px;
+  }
+  
+  /* .btn-venue {
+    background-color: green;
+  }
+  
+  .btn-food {
+    background-color: orange;
+  } */
+  .card-title.custom-title {
+    
+    font-weight: bold;
+    font-size: medium;
+    color: rgb(16, 15, 15);
+    font-family: Arial;
+  }
+  
+/* .row{
+
+   
+
+    display:flex;
+
+   
+
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+} */
+
+
+
+  
+  
+  

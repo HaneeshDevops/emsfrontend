@@ -1,0 +1,566 @@
+/* .container{
+    background-image: url('../../../assets/backg.png');
+    background-size:contain;
+    background-position: center;
+} */
+/* .container{
+    background-image: url('../../../assets/Images/headerPage.jpg');
+    height: 600px;
+    width: 100%;
+    background-position: center top;
+    background-size: cover;
+    
+} */
+/* .container {
+    background-image: url('../../../assets/Images/headerPage.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    width: auto;
+    margin: 0px ;
+  } */
+   /* .container {
+    background-image: url('../../../assets/Images/headerPage.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover; 
+   
+     height: 540px; 
+    width:100%;
+     padding: 0;
+    margin:0px;
+   
+  }  */
+  /* .container {
+    background-image: url('../../../assets/Images/headerPage.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+   */
+/* .navbar {
+    position: absolute; /* add position absolute */
+    /* z-index: 1; 
+    width: 100%;
+  }  */
+  /* real code
+  .banner
+{   
+    background-image: url('../../../assets/Images/EMSPage1.jpg');
+    height: 550px;
+    background-position: center top;
+    background-size: cover;
+} */
+.home-section{
+
+  height: 100vh;
+ 
+ }
+ 
+ 
+ 
+ 
+ .background-section{
+ 
+  background: url(https://www.bookeventz.com/blog/wp-content/uploads/2020/07/FI.jpg);
+ 
+  height: 69vh;
+ 
+  background-repeat: no-repeat;
+ 
+  background-size: cover
+ 
+ }
+ 
+ 
+ 
+ 
+ .demo-section{
+ 
+ background-color: rgb(235, 235, 235);
+ 
+  text-align: center;
+ 
+  padding: 2.5rem 0;
+ 
+ }
+ 
+ 
+ 
+ 
+ .divider{
+ 
+  border: 2px solid #3d3d3d;
+ 
+  width: 12%;
+ 
+  margin: 0 auto 1.2rem auto;
+ 
+ }
+ 
+ 
+ 
+ 
+ .demo-section h1{
+ 
+  font-size: 2rem;
+ 
+ }
+ 
+ 
+ 
+ 
+ .demo-section p{
+ 
+  font-size: 1.3rem;
+ 
+  width: 65%;
+ 
+  margin: 0 auto;
+ 
+  line-height: 1.8rem;
+ 
+ }
+ 
+ 
+ 
+ 
+ .demo-btn{
+ 
+  margin-top: 1rem;
+ 
+  padding: 1.5rem 2rem;
+ 
+  background-color: #3d3d3d;
+ 
+  color: white;
+ 
+ }
+ 
+ 
+ 
+ 
+ .demo-btn:hover{
+ background-color: #966868;
+     
+ 
+ }
+ 
+ 
+ 
+ 
+ .why-section{
+ 
+  margin-top: 2.5rem;
+ 
+ }
+ 
+ 
+ 
+ 
+ .why-section h1{
+ 
+  font-size: 2rem;
+ 
+  text-align: center;
+ 
+ }
+ 
+ 
+ 
+ 
+ .items-container{
+ 
+  display: flex;
+ 
+  flex-direction: row;
+ 
+  justify-content: center;
+ 
+  align-items: center;
+ 
+  margin-top: 3rem;
+ 
+ }
+ 
+ 
+ 
+ 
+ .item{
+ 
+  border: 4px solid #404142;
+ 
+  border-radius: 20px;
+ 
+  width: 300px;
+ 
+  height: 200px;
+ 
+  margin: 0 1.5rem;
+ 
+  padding: 1rem;
+ 
+ }
+ 
+ 
+ 
+ 
+ .item i{
+ 
+  font-size: 3rem;
+ 
+  color: #2e2c2c;
+ 
+ }
+ 
+ 
+ 
+ 
+ .km-btn{
+ 
+  margin: 2.5rem auto;
+ 
+  padding: 1.5rem 2.5rem;
+ 
+  background-color: #14344c;
+ 
+  color: white;
+ 
+ }
+ 
+ 
+ 
+ 
+ .km-btn:hover{
+ 
+  background-color: #966868;
+ 
+ }
+ 
+ 
+ 
+ 
+ .bb{
+ 
+  text-align: center;
+ 
+ }
+ 
+ 
+ 
+ 
+ .site-footer
+ 
+ {
+ 
+  background-color:#3d3d3d;
+ 
+  padding:45px 0 20px;
+ 
+ font-size:15px;
+ 
+  line-height:24px;
+ 
+  color: white;
+ 
+ }
+ 
+ .site-footer hr
+ 
+ {
+ 
+  border-top-color:#bbb;
+ 
+  opacity:0.5
+ 
+ }
+ 
+ .site-footer hr.small
+ 
+ {
+ 
+  margin:20px 0
+ 
+ }
+ 
+ .site-footer h6
+ 
+ {
+ 
+  color:rgb(255, 255, 255);
+ 
+  font-size:16px;
+ 
+  text-transform:uppercase;
+ 
+  margin-top:5px;
+ 
+  letter-spacing:2px
+ 
+ }
+ 
+ .site-footer a
+ 
+ {
+ 
+  color:white;
+ 
+ }
+ 
+ .site-footer a:hover
+ 
+ {
+ 
+  color:black;
+ 
+  text-decoration:none;
+ 
+ }
+ 
+ .footer-links
+ 
+ {
+ 
+  padding-left:0;
+ 
+  list-style:none
+ 
+ }
+ 
+ .footer-links li
+ 
+ {
+ 
+  display:block
+ 
+ }
+ 
+ .footer-links a
+ 
+ {
+ 
+  color:white;
+ 
+ }
+ 
+ .footer-links a:active,.footer-links a:focus,.footer-links a:hover
+ 
+ {
+ 
+  color:black;
+ 
+  text-decoration:none;
+ 
+ }
+ 
+ .footer-links.inline li
+ 
+ {
+ 
+display:inline-block
+ 
+ }
+ 
+ .site-footer .social-icons
+ 
+ {
+ 
+  text-align:right
+ 
+ }
+ 
+ .copyright-text
+ 
+ {
+ 
+  margin:0
+ 
+ }
+ 
+ @media (max-width:991px)
+ 
+ {
+ 
+  .site-footer [class^=col-]
+ 
+  {
+ 
+  margin-bottom:30px
+ 
+  }
+ 
+ }
+ 
+ @media (max-width:767px)
+ 
+ {
+ 
+  .site-footer
+ 
+  {
+ 
+  padding-bottom:0
+ 
+  }
+ 
+  .site-footer .copyright-text,.site-footer .social-icons
+ 
+  {
+ 
+  text-align:center
+ 
+  }
+ 
+ }
+ 
+ .social-icons
+ 
+ {
+ 
+  padding-left:0;
+ 
+  margin-bottom:0;
+ 
+  list-style:none
+ 
+ }
+ 
+ .social-icons li
+ 
+ {
+ 
+  display:inline-block;
+ 
+  margin-bottom:4px
+ 
+ }
+ 
+ .social-icons li.title
+ 
+ {
+ 
+  margin-right:15px;
+ 
+  text-transform:uppercase;
+ 
+  color:#96a2b2;
+ 
+  font-weight:700;
+ 
+  font-size:13px
+ 
+ }
+ 
+ .social-icons a{
+ 
+  background-color:#eceeef;
+ 
+  color:#818a91;
+ 
+  font-size:16px;
+ 
+  display:inline-block;
+ 
+  line-height:44px;
+ 
+  width:44px;
+ 
+  height:44px;
+ 
+  text-align:center;
+ 
+  margin-right:8px;
+ 
+  border-radius:100%;
+ 
+  -webkit-transition:all .2s linear;
+ 
+  -o-transition:all .2s linear;
+ 
+  transition:all .2s linear
+ 
+ }
+ 
+ .social-icons a:active,.social-icons a:focus,.social-icons a:hover
+ 
+ {
+ 
+  color:#fff;
+ 
+ background-color:#3d3d3d
+ 
+ }
+ 
+ .social-icons.size-sm a
+ 
+ {
+ 
+  line-height:34px;
+ 
+  height:34px;
+ 
+  width:34px;
+ 
+  font-size:14px
+ 
+ }
+ 
+ .social-icons a.facebook:hover
+ 
+ {
+ 
+  background-color:#3b5998
+ 
+ }
+ 
+ .social-icons a.twitter:hover
+ 
+ {
+ 
+  background-color:#00aced
+ 
+ }
+ 
+ .social-icons a.linkedin:hover
+ 
+ {
+ 
+  background-color:#007bb6
+ 
+ }
+ 
+ .social-icons a.dribbble:hover
+ 
+ {
+ 
+  background-color:#ea4c89
+ 
+ }
+ 
+ @media (max-width:767px)
+ 
+ {
+ 
+  .social-icons li.title
+ 
+  {
+ 
+ display:block;
+ 
+  margin-right:0;
+ 
+  font-weight:600
+ 
+  }
+ 
+ }
