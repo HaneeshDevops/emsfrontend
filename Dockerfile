@@ -1,10 +1,13 @@
-FROM node:latest
+# Stage 1: Build the application
+FROM node:latest AS build
 WORKDIR /usr/src/app
-
 COPY package*.json ./
 RUN npm install
-
 COPY . .
-EXPOSE 4200
+RUN npm run build
 
-CMD ["node", "--max-old-space-size=4096", "node_modules/@angular/cli/bin/ng", "serve", "--host", "0.0.0.0", "--port", "4200"]
+# Stage 2: Create a lightweight production image
+FROM nginx:alpine
+COPY --from=build /usr/src/app/dist /usr/share/nginx/html
+EXPOSE 4200
+CMD ["nginx", "-g", "daemon off;"]
